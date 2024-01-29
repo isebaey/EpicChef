@@ -1,0 +1,145 @@
+/* Global Variables */
+:root {
+  --transitionDuration: 0.4s;
+}
+
+body {
+  background-color: #eee;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Loader start */
+.loader {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+}
+.loader:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.circular {
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@keyframes color {
+  100%,
+  0% {
+    stroke: #d62d20;
+  }
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
+  }
+}
+body {
+  background-color: #eee;
+}
+.showbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loader End */
+
+/* ================== card ================== */
+.card {
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  transition: transform var(--transitionDuration);
+
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card__img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.card__content {
+  background-color: white;
+  width: 70%;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: width var(--transitionDuration);
+  transform: translateY(100%);
+}
+
+.card:hover .card__content {
+  width: 100%;
+  transform: translateY(0);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card__name {
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.card__position {
+  color: #00acc1;
+  font-size: 13px;
+}

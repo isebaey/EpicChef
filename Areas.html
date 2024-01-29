@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpicChef - Areas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/categories.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      i,
+      h3 {
+        cursor: pointer;
+      }
+      .rounded-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="text-center pb-5"><img src="image/logo-sm.jpg" alt="" /></div>
+      <ul class="nav-list">
+        <li>
+          <a href="Search.html"><i class="fa-solid fa-search"></i> Search</a>
+        </li>
+        <li>
+          <a href="categories.html" aria-current="page"
+            ><i class="fa-solid fa-list"></i> Categories</a
+          >
+        </li>
+        <li class="active">
+          <a href="Areas.html"><i class="fa-solid fa-earth"></i> Area</a>
+        </li>
+
+        <li>
+          <a href="ingredients.html"
+            ><i class="fa-solid fa-puzzle-piece"></i> Ingredients</a
+          >
+        </li>
+        <li>
+          <a href="Contact Us.html"
+            ><i class="fa-solid fa-phone"></i> Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ========== Start Areas ========== -->
+    <h2 class="h1 text-center p-5">Meals By Areas</h2>
+    <section class="Areas">
+      <div class="container">
+        <div class="row rowOfAllAreas py-5 g-4" id="rowData">
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('American')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>American</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('British')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>British</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Canadian')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Canadian</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Chinese')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Chinese</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Croatian')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Croatian</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div onclick="getAreaMeals('Dutch')" class="rounded-2 text-center">
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Dutch</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Egyptian')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Egyptian</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Filipino')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Filipino</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div onclick="getAreaMeals('French')" class="rounded-2 text-center">
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>French</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div onclick="getAreaMeals('Greek')" class="rounded-2 text-center">
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Greek</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div onclick="getAreaMeals('Indian')" class="rounded-2 text-center">
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Indian</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div onclick="getAreaMeals('Irish')" class="rounded-2 text-center">
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Irish</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Italian')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Italian</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Jamaican')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Jamaican</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Japanese')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Japanese</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div onclick="getAreaMeals('Kenyan')" class="rounded-2 text-center">
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Kenyan</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Malaysian')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Malaysian</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Mexican')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Mexican</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Moroccan')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Moroccan</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div onclick="getAreaMeals('Polish')" class="rounded-2 text-center">
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Polish</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Portuguese')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Portuguese</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Russian')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Russian</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Spanish')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Spanish</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div onclick="getAreaMeals('Thai')" class="rounded-2 text-center">
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Thai</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Tunisian')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Tunisian</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Turkish')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Turkish</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Unknown')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Unknown</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getAreaMeals('Vietnamese')"
+              class="rounded-2 text-center"
+            >
+              <i class="fa-solid fa-house-laptop fa-4x"></i>
+              <h3>Vietnamese</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== End Areas ========== -->
+
+    <!-- ? ========= JS Files  =========== -->
+    <!-- Link to fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a692e1c39f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- my js -->
+    <script src="js/Areas.js"></script>
+  </body>
+</html>

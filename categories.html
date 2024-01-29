@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>EpicChef - Caegories</title>
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/categories.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="">
+    <!-- ========== Start categories ========== -->
+
+    <div class="showbox">
+      <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle
+            class="path"
+            cx="50"
+            cy="50"
+            r="20"
+            fill="none"
+            stroke-width="2"
+            stroke-miterlimit="10"
+          />
+        </svg>
+      </div>
+    </div>
+    <nav>
+      <div class="text-center pb-5"><img src="image/logo-sm.jpg" alt="" /></div>
+
+      <ul class="nav-list">
+        <li>
+          <a href="Search.html"><i class="fa-solid fa-search"></i> Search</a>
+        </li>
+        <li class="active">
+          <a href="categories.html" aria-current="page"
+            ><i class="fa-solid fa-list"></i> Categories</a
+          >
+        </li>
+        <li>
+          <a href="Areas.html"><i class="fa-solid fa-earth"></i> Area</a>
+        </li>
+
+        <li>
+          <a href="ingredients.html"
+            ><i class="fa-solid fa-puzzle-piece"></i> Ingredients</a
+          >
+        </li>
+        <li>
+          <a href="Contact Us.html"
+            ><i class="fa-solid fa-phone"></i> Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section class="categories">
+      <div class="backToCat d-none">
+        <a class="d-inline-block text-decoration-none" href="categories.html">
+          <div
+            class="d-flex gap-2 align-items-center m-3 text-white cursor-pointer btn"
+          >
+            <i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+            <span class="fs-5">Back to Categories</span>
+          </div>
+        </a>
+      </div>
+      <div class="row rowOfAllCat m-5"></div>
+    </section>
+
+    <!-- ========== End categories ========== -->
+
+    <!-- ? ========= JS Files  =========== -->
+    <!-- Link to fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a692e1c39f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- my js -->
+    <script src="js/categories.js"></script>
+  </body>
+</html>

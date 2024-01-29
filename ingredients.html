@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EpicChef - Ingredients</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- CSS Files -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/categories.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      i,
+      h3 {
+        cursor: pointer;
+      }
+      .rounded-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="text-center pb-5"><img src="image/logo-sm.jpg" alt="" /></div>
+
+      <ul class="nav-list">
+        <li>
+          <a href="Search.html"><i class="fa-solid fa-search"></i> Search</a>
+        </li>
+        <li>
+          <a href="categories.html" aria-current="page"
+            ><i class="fa-solid fa-list"></i> Categories</a
+          >
+        </li>
+        <li>
+          <a href="Areas.html"><i class="fa-solid fa-earth"></i> Area</a>
+        </li>
+
+        <li class="active">
+          <a href="ingredients.html"
+            ><i class="fa-solid fa-puzzle-piece"></i> Ingredients</a
+          >
+        </li>
+        <li>
+          <a href="Contact Us.html"
+            ><i class="fa-solid fa-phone"></i> Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ========== Start ingredients ========== -->
+    <h2 class="h1 text-center p-5">Meals By Ingredients</h2>
+    <section class="ingredients">
+      <div class="container">
+        <div class="row rowOfAllIngredients py-5 g-4" id="rowData">
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Chicken')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Chicken</h3>
+              <p>
+                The chicken is a type of domesticated fowl, a subspecies of the
+                red junglefowl (Gallus gallus). It is one of
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Salmon')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Salmon</h3>
+              <p>
+                Salmon is the common name for several species of ray-finned fish
+                in the family Salmonidae. Other fish in the same
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Beef')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Beef</h3>
+              <p>
+                Beef is the culinary name for meat from cattle, particularly
+                skeletal muscle. Humans have been eating beef since prehistoric
+                times.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Pork')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Pork</h3>
+              <p>
+                Pork is the culinary name for the flesh of a domestic pig (Sus
+                scrofa domesticus). It is the most commonly
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Avocado')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Avocado</h3>
+              <p>
+                The avocado, a tree with probable origin in South Central
+                Mexico, is classified as a member of the flowering plant
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Apple Cider Vinegar')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Apple Cider Vinegar</h3>
+              <p>
+                Apple cider vinegar, or cider vinegar, is a vinegar made from
+                fermented apple juice, and used in salad dressings, marinades,
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Asparagus')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Asparagus</h3>
+              <p>
+                Asparagus, or garden asparagus, folk name sparrow grass,
+                scientific name Asparagus officinalis, is a perennial flowering
+                plant species in the
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Aubergine')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Aubergine</h3>
+              <p>
+                Eggplant (US, Australia), aubergine (UK), or brinjal (South Asia
+                and South Africa) is a plant species in the nightshade family
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Baby Plum Tomatoes')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Baby Plum Tomatoes</h3>
+              <p>
+                The tomato is the edible, often red, berry of the plant Solanum
+                lycopersicum, commonly known as a tomato plant. The
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Bacon')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Bacon</h3>
+              <p>
+                Bacon is a type of salt-cured pork. Bacon is prepared from
+                several different cuts of meat, typically from the pork
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Baking Powder')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Baking Powder</h3>
+              <p>
+                Baking powder is a dry chemical leavening agent, a mixture of a
+                carbonate or bicarbonate and a weak acid. The
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Balsamic Vinegar')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Balsamic Vinegar</h3>
+              <p>
+                Balsamic vinegar (Italian: aceto balsamico), occasionally
+                shortened to balsamic, is a very dark, concentrated, and
+                intensely flavoured vinegar originating in
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Basil')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Basil</h3>
+              <p>
+                Basil, also called great basil, is a culinary herb of the family
+                Lamiaceae (mints). Basil is native to tropical regions from
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Basil Leaves')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Basil Leaves</h3>
+              <p>
+                Basil, also called great basil, is a culinary herb of the family
+                Lamiaceae (mints).
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Basmati Rice')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Basmati Rice</h3>
+              <p>
+                Basmati is a variety of long, slender-grained aromatic rice
+                which is traditionally from the Indian subcontinent. As of
+                2018-19, India
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Bay Leaf')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Bay Leaf</h3>
+              <p>
+                The bay leaf is an aromatic leaf commonly used in cooking. It
+                can be used whole, or as dried and
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Bay Leaves')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Bay Leaves</h3>
+              <p>
+                The bay leaf is an aromatic leaf commonly used in cooking. It
+                can be used whole, or as dried and
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Beef Brisket')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Beef Brisket</h3>
+              <p>
+                Beef is the culinary name for meat from cattle, particularly
+                skeletal muscle. Humans have been eating beef since prehistoric
+                times.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Beef Fillet')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Beef Fillet</h3>
+              <p>
+                Beef is the culinary name for meat from cattle, particularly
+                skeletal muscle. Humans have been eating beef since prehistoric
+                times.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div
+              onclick="getIngredientsMeals('Beef Gravy')"
+              class="rounded-2 text-center cursor-pointer"
+            >
+              <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+              <h3>Beef Gravy</h3>
+              <p>
+                Beef is the culinary name for meat from cattle, particularly
+                skeletal muscle. Humans have been eating beef since prehistoric
+                times.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== End ingredients ========== -->
+
+    <!-- ? ========= JS Files  =========== -->
+    <!-- Link to fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/a692e1c39f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- my js -->
+    <script src="js/ingredients.js"></script>
+  </body>
+</html>

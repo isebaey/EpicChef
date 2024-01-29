@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+
+:root {
+  --main-color: #123;
+  --second-color: #234;
+  font-family: arimo;
+}
+
+/* colors */
+.main-color {
+  background-color: #123;
+}
+
+.second-color {
+  background-color: #234;
+}
+
+/* start sidebar */
+
+.main-nav {
+  background-color: var(--second-color) !important;
+}
+
+/*  */
+
+:root {
+  --body-bg: #123;
+  --nav-bg: #234;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: system-ui;
+}
+body {
+  margin: 0;
+  font-size: 1.25rem;
+  background: var(--body-bg);
+  padding-inline-start: 20rem;
+  color: white;
+}
+nav {
+  background: var(--nav-bg);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-block: 2rem;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  gap: 1rem;
+}
+
+.nav-list a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-list li {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  margin-inline: 1rem 0;
+  /* prevent animation glitch on right side */
+  box-shadow: 2px 0 0 var(--body-bg);
+}
+
+.nav-list li.active {
+  view-transition-name: nav;
+  display: block;
+  background: var(--body-bg);
+  position: relative;
+  z-index: -1;
+  border-radius: 100vw 0 0 100vw;
+}
+
+::view-transition-group(nav) {
+  animation-duration: 1s;
+}
+
+.nav-list li.active::before,
+.nav-list li.active::after {
+  --border-radius: 1rem;
+
+  content: "";
+  position: absolute;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  right: 0rem;
+  background: var(--nav-bg);
+}
+
+.nav-list li.active::before {
+  border-radius: 0 0 var(--border-radius);
+  top: calc(var(--border-radius) * -1);
+  box-shadow: 5px 5px 0 5px var(--body-bg);
+}
+
+.nav-list li.active::after {
+  border-radius: 0 var(--border-radius) 0 0;
+  bottom: calc(var(--border-radius) * -1);
+  box-shadow: 5px -5px 0 5px var(--body-bg);
+}
+
+.nav-list li:nth-child(1) a {
+  view-transition-name: test;
+}
+
+.nav-list li:nth-child(2) a {
+  view-transition-name: test-2;
+}
+
+.nav-list li:nth-child(3) a {
+  view-transition-name: test-3;
+}
