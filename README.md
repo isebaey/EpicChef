@@ -44,13 +44,13 @@ git clone https://github.com/isebaey/EpicChef.git``
 ``npm start``
 
 ## Dependencies
-Bootstrap: ^5.3.2
-Font Awesome: ^4.7.0
-jQuery: ^3.7.1
+* Bootstrap: ^5.3.2
+* Font Awesome: ^4.7.0
+* jQuery: ^3.7.1
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to Task Ninja, fork the repository, make changes, and submit a pull request. Follow the existing coding style and structure. For issues or suggestions, open an issue on the GitHub repository.
+Contributions are welcome! If you'd like to contribute to EpicChef, fork the repository, make changes, and submit a pull request. Follow the existing coding style and structure. For issues or suggestions, open an issue on the GitHub repository.
 
 ## License
 
